@@ -1,9 +1,14 @@
-## Root
-/
-GET
+Root
+========
+### List actions
+```http
+GET /
+```
 
+- - -
 
-## Notes
+Notes
+========
 ### List notes
 ```http
 GET /notes/
@@ -29,7 +34,10 @@ PATCH /note/:note_id/
 DELETE /note/:note_id/
 ```
 
-## Topics
+- - -
+
+Topics
+========
 ### Get list of topics
 ```http
 GET /topics/
@@ -60,7 +68,10 @@ PATCH /topics/:topic_slug/
 DELETE /topics/:topic_slug/
 ```
 
-## Documents
+- - -
+
+Documents
+========
 ### Get a list of documents
 ```http
 GET /documents/
@@ -86,7 +97,10 @@ PATCH /documents/:document_id/
 DELETE /documents/:document_id/
 ```
 
-## Transcripts
+- - -
+
+Transcripts
+========
 ### Get a document's transcript
 ```http
 GET /documents/:document_id/transcript/
@@ -102,7 +116,10 @@ PUT /documents/:document_id/transcript/
 DELETE /documents/:document_id/transcript/
 ```
 
-## Footnotes
+- - -
+
+Footnotes
+========
 ### List footnotes in a transcript
 ```http
 GET /documents/:document_id/transcript/footnotes/
@@ -128,7 +145,10 @@ PATCH /documents/:document_id/transcript/footnote/:footnote_id/
 DELETE /documents/:document_id/transcript/footnote/:footnote_id/
 ```
 
-## Projects
+- - -
+
+Projects
+========
 ### List projects
 ```http
 GET /projects/
@@ -144,7 +164,10 @@ GET /projects/:project_slug/
 GET /projects/:project_slug/roster/
 ```
 
-## Users
+- - -
+
+Users
+========
 ### List users
 ```http
 GET /users/
