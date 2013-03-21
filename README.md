@@ -18,6 +18,15 @@ GET /notes/
 ```http
 POST /notes/
 ```
+example:
+```javascript
+{
+'title': 'My new note',
+'description': 'This is where I will be doing my work.',
+'status': '1',
+'assigned_users': ['patrick']
+}
+```
 
 ### View a specific note
 ```http
