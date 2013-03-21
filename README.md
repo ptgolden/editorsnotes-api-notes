@@ -4,68 +4,154 @@ GET
 
 
 ## Notes
-
 ### List notes
-```http GET /notes/```
+```http
+GET /notes/
+```
 
 ### Add a note
-```http POST /notes/```
+```http
+POST /notes/
+```
 
 ### View a specific note
-```http GET /note/:note_id/```
+```http
+GET /note/:note_id/
+```
 
 ### Update a specific note
-```http PATCH /note/:note_id/```
+```http
+PATCH /note/:note_id/
+```
 
-### Delete a specific
-```http DELETE /note/:note_id/```
+### Delete a specific note
+```http
+DELETE /note/:note_id/
+```
 
 ## Topics
-/topics/
-verbs: GET, POST
+### Get list of topics
+```http
+GET /topics/
+```
 
-/topics/:topic_slug/
-verbs: GET, PATCH, DELETE
+### Add a new topic
+```http
+POST /topics/
+```
 
+### Get a specific topic
+```http
+GET /topics/:topic_slug/
+```
+
+### Get items related to a specific topic
+```http
+GET /topics/:topic_slug/related/
+```
+
+### Update a specific topic
+```http
+PATCH /topics/:topic_slug/
+```
+
+### Delete a specific topic
+```http
+DELETE /topics/:topic_slug/
+```
 
 ## Documents
-/documents/
-verbs: GET, POST
+### Get a list of documents
+```http
+GET /documents/
+```
 
-/documents/:topic_id/
-verbs: GET, PATCH, DELETE
+### Create a document
+```http
+POST /documents/
+```
 
+### Get a specific document
+```http
+GET /documents/:document_id/
+```
+
+### Update a specific document
+```http
+PATCH /documents/:document_id/
+```
+
+### Delete a specific document
+```http
+DELETE /documents/:document_id/
+```
 
 ## Transcripts
-/transcripts/
-verbs: GET, POST
+### Get a document's transcript
+```http
+GET /documents/:document_id/transcript/
+```
 
-/transcripts/:id/
-verbs: GET, PATCH, DELETE
+### Create or update a document's transcript
+```http
+PUT /documents/:document_id/transcript/
+```
 
-/transcripts/:id/footnotes/
-verbs: GET, POST
+### Delete a document's transcript
+```http
+DELETE /documents/:document_id/transcript/
+```
 
-/transcripts/:id/footnotes/:id/
-verbs: GET, PATCH, DELETE
+### List footnotes in a transcript
+```http
+GET /documents/:document_id/transcript/footnotes/
+```
+
+### Add a footnote to a transcript
+```http
+POST /documents/:document_id/transcript/footnotes/
+```
+
+### View a specific footnote
+```http
+GET /documents/:document_id/transcript/footnote/:footnote_id/
+```
+
+### Update a specific footnote
+```http
+PATCH /documents/:document_id/transcript/footnote/:footnote_id/
+```
+
+### Delete a specific footnote
+```http
+DELETE /documents/:document_id/transcript/footnote/:footnote_id/
+```
 
 ## Projects
-/projects/
-verbs: GET, POST
+### List projects
+```http
+GET /projects/
+```
 
-/projects/:project_id/
-verbs: GET, PATCH, DELETE
+### View a specific project
+```http
+GET /projects/:project_slug/
+```
 
-/projects/:project_id/roster/
-verbs: GET, POST
-
+### View a project's roster
+```http
+GET /projects/:project_slug/roster/
+```
 
 ## Users
-/users/
-verbs: GET, POST
+### List users
+```http
+```
 
-/users/:username/
-verbs: GET, PATCH, DELETE
+### View a specific user
+```http
+```
 
-/users/:usersname/recent/
-verbs: GET
+### View a user's recent history
+```http
+```
