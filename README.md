@@ -102,6 +102,7 @@ PUT /documents/:document_id/transcript/
 DELETE /documents/:document_id/transcript/
 ```
 
+## Footnotes
 ### List footnotes in a transcript
 ```http
 GET /documents/:document_id/transcript/footnotes/
@@ -146,12 +147,15 @@ GET /projects/:project_slug/roster/
 ## Users
 ### List users
 ```http
+GET /users/
 ```
 
 ### View a specific user
 ```http
+GET /users/:username/
 ```
 
 ### View a user's recent history
 ```http
+GET /users/:username/recent/
 ```
